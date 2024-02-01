@@ -36,6 +36,9 @@ This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo
 
 **Open audio device using Open AL**
 ```javascript
+import { createRequire } from 'module';
+const AV = createRequire(import.meta.url)('./neon_al.node')
+
 // open al handling...
 aDevice = AL.alcOpenDevice();
 aContext = AL.alcCreateContext(aDevice);
