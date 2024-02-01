@@ -1,0 +1,19 @@
+[package]
+name = "neon_al"
+version = "0.1.0"
+license = "ISC"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+openal-sys = "1.16.0"
+
+[dependencies.neon]
+git = "https://github.com//neon-bindings/neon/"
+default-features = false
+features = ["napi-latest", "external-buffers"]
