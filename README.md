@@ -1,5 +1,5 @@
 # neon_al
-OpenAL bindings for node using Neon. This library was built for use with the ffmpeg library. You also need [neon_ffmpeg](https://github.com/kyeongwoon/neon_ffmpeg) for handling media files.
+OpenAL bindings for node using Neon. This library was built for use with the OpenAL library. You also need [neon_ffmpeg](https://github.com/kyeongwoon/neon_ffmpeg) for handling media files.
 
 
 This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
@@ -12,6 +12,8 @@ You can install the project with npm. In the project directory, run:
 
 ```sh
 $ brew openal-soft
+$ git clone https://github.com/kyeongwoon/neon_al
+$ cd neon_al
 $ npm install
 ```
 
@@ -30,7 +32,7 @@ If you cannot find the openal-soft library when building, you can edit the follo
 println!(r"cargo:rustc-link-search=/opt/homebrew/opt/openal-soft/lib");
 ```
 
-This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./index.node`.
+This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./neon_al.node`.
 
 ## Usage
 

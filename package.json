@@ -2,7 +2,8 @@
   "name": "neon_al",
   "type": "module",
   "version": "0.1.0",
-  "description": "",
+  "description": "OpenAL bindings for Node.js using Neon",
+  "author": "kyeongwoon <kyeongwoon.lee@gmail.com>",
   "main": "neon_al.node",
   "scripts": {
     "build": "cargo-cp-artifact -nc neon_al.node -- cargo build --message-format=json-render-diagnostics",
@@ -11,8 +12,7 @@
     "install": "npm run build-release",
     "test": "cargo test"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "cargo-cp-artifact": "^0.1"
   }
